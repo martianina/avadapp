@@ -42,7 +42,7 @@ const config = {
     local: {
       url: 'http://localhost:9650/ext/bc/C/rpc', // Local node we started using `yarn start:avalanche`
       gasPrice: 225000000000,
-      chainId: 43112, // Every network has a chainId for identification
+      chainId: 43117, // Every network has a chainId for identification
       accounts: [
         // List of private keys for development accounts - DO NOT TRANSFER ASSETS TO THESE ACCOUNTS ON A MAINNET
         '0x56289e99c94b6912bfc12adc093c9b51124f0dc54ac7a766b2bc5ccf558d8027',
@@ -57,10 +57,10 @@ const config = {
         '0x750839e9dbbd2a0910efe40f50b2f3b2f2f59f5580bb4b83bd8c1201cf9a010a',
       ],
     },
-    fuji: {
-      url: 'https://api.avax-test.network/ext/bc/C/rpc', // Public Avalanche testnet
+    etna: {
+      url: 'https://etna.avax-dev.network/ext/bc/C/rpc', // Public Avalanche testnet
       gasPrice: 225000000000,
-      chainId: 43113,
+      chainId: 43117,
       accounts: [process.env.TEST_ACCOUNT_PRIVATE_KEY], // Use your account private key on the Avalanche testnet
     },
     mainnet: {
